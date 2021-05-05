@@ -4,7 +4,7 @@ function getNoteId(){
         return 1
     }
     const keysArray = Object.keys(noteObject)
-    const numberKeys = keysArray.map((key)=>Number(key))
+    const numberKeys = keysArray.map((key) => Number(key))
     console.log(numberKeys)
     return Math.max( ... numberKeys) + 1
 }
